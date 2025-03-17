@@ -245,6 +245,9 @@ EID.InlineIcons = {
 	["GrabBag"] = {"pickups", 11, 8, 8, 0, 2},
 	["BlackSack"] = {"pickups", 12, 8, 8, 0, 2},
 
+	["Nickel"] = {"pickups", 13, 8, 9, 0, 1},
+	["Dime"] = {"pickups", 14, 8, 9, 0, 1},
+
 	-- Collectible
 	["Collectible"] = {"Collectible", 0, 7, 7},
 	----- Use Markup "Collectible"+ ITEMID to render collectible sprites (example: {{Collectible1}} = Sad Onion)
@@ -264,6 +267,7 @@ EID.InlineIcons = {
 	["RestockMachine"] = {"machines", 5, 8, 7, 0, 3},
 	["Mirror"] = {"machines", 6, 8, 7, 0, 2},
 	["CraneGame"] = {"machines", 7, 8, 7, 0, 3},
+	["ReviveMachine"] = {"machines", 8, 8, 7, 0, 3},
 
 	-- Beggars
 	["Beggar"] = {"Beggars", 0, 8, 7, 0, 3},
@@ -1302,4 +1306,13 @@ EID.BoC.ComponentShifts = {
 	{0x00000011, 0x0000000F, 0x00000014},
 	{0x00000011, 0x0000000F, 0x00000017},
 	{0x00000011, 0x0000000F, 0x0000001A}
+}
+	
+-- list of multipliers for Abyss locust damages
+EID.QualityToLocustDamageMultiplier = {
+	[0] = 0.5,
+	[1] = 0.75,
+	[2] = 1,
+	[3] = 1.5,
+	[4] = 2,
 }
